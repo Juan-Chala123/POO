@@ -1,9 +1,9 @@
 <?php
 abstract class salary {
-    protected int $identifity;
-    protected string $name;
-    protected string $lastName;
-    protected int $salario;
+    private int $identifity;
+    private string $name;
+    private string $lastName;
+    private int $salario;
 
     public function __construct(int $identifity, string $name, string $lastName, int $salario) {
         $this->identifity = $identifity;
