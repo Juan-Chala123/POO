@@ -22,7 +22,7 @@ class extras extends salary {
     }
 
     public function payTotal(): float {
-        $this->extrass = (0.125 * ($this->dayTime * $this->salario)) + (0.175 * ($this->nightTime * $this->salario)) + (0.200 * ($this->holiDays * $this->salario));
+        $this->extrass = (0.125 * ($this->dayTime * $this->getSalario())) + (0.175 * ($this->nightTime * $this->getSalario())) + (0.200 * ($this->holiDays * $this->getSalario()));
         return $this->extrass;
     }
 }
